@@ -20,6 +20,7 @@ if __name__ == '__main__':
     routes = [item for item in permutations(address)]
     for e, i in enumerate(routes):
         route = list(i)
+        route.append(post)
         route.insert(0, post)
         find_distance(route)
 
